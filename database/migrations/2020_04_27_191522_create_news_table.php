@@ -18,6 +18,7 @@ class CreateNewsTable extends Migration
             $table->string('titulo');
             $table->longText('descripcion');
             $table->boolean('activo');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
